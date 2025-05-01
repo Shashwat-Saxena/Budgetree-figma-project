@@ -1,0 +1,142 @@
+'use client'
+
+export default function ContactSection() {
+  return (
+    <section className="bg-gradient-to-br bg-blue-900 px-6 md:px-20 py-16 text-white flex flex-col md:flex-row gap-16">
+      {/* Left part (Text) */}
+      <div className="flex-1 flex flex-col justify-center"> {/* <-- Yeh change kiya */}
+        <h1 className="text-6xl font-semibold mb-6 text-[#D0E1FF] font-poppins">
+          Fly with Us
+        </h1>
+        <p className="text-2xl text-[#DCE9FF] font-poppins">
+          Enhance employee and customers engagement with <br /> 
+          smart rewards and payouts — email us to explore <br /> 
+          tailored solutions!
+        </p>
+      </div>
+
+      {/* Right part (Form) */}
+      <div className="flex-1 bg-[#D0E1FF] p-8 rounded-lg shadow-lg">
+        <h3 className="text-2xl font-semibold mb-6 text-blue-900 font-poppins">Contact Form</h3>
+        <form action="#" method="POST">
+          {/* Name */}
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-lg font-medium mb-2 text-blue-900 font-poppins">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              className="w-full p-3 rounded-md bg-white border border-gray-300 text-black"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          {/* Email */}
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-lg font-medium mb-2 text-blue-900 font-poppins">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className="w-full p-3 rounded-md bg-white border border-gray-300 text-black"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          {/* Region */}
+          <div className="mb-4">
+            <label htmlFor="region" className="block text-lg font-medium mb-2 text-blue-900 font-poppins">Region</label>
+            <select
+              id="region"
+              name="region"
+              required
+              className="w-full p-3 rounded-md bg-white border border-gray-300 text-black"
+            >
+              <option value="">Select your region</option>
+              <option value="Asia">Asia</option>
+              <option value="Europe">Europe</option>
+              <option value="North America">North America</option>
+              <option value="South America">South America</option>
+              <option value="Africa">Africa</option>
+              <option value="Arab">Arab</option>
+              <option value="Japan">Japan</option>
+            </select>
+          </div>
+
+          {/* Users */}
+          <div className="mb-4">
+            <label htmlFor="users" className="block text-lg font-medium mb-2 text-blue-900 font-poppins">Users</label>
+            <select
+              id="users"
+              name="users"
+              required
+              className="w-full p-3 rounded-md bg-white border border-gray-300 text-black"
+            >
+              <option value="">Select number of users</option>
+              <option value="1-10">1-10</option>
+              <option value="11-50">11-50</option>
+              <option value="51-100">51-100</option>
+              <option value="100+">100+</option>
+            </select>
+          </div>
+
+          {/* Phone Number with Country */}
+          <div className="mb-4 flex items-center gap-4">
+            <div className="w-1/3">
+              <label htmlFor="country" className="block text-lg font-medium mb-2 text-blue-900 font-poppins">Country</label>
+              <select
+                id="country"
+                name="country"
+                required
+                className="w-full p-3 rounded-md bg-white border border-gray-300 text-black"
+              >
+                <option value="">Select Country</option>
+                <option value="US">United States</option>
+                <option value="IN">India</option>
+                <option value="UK">United Kingdom</option>
+                <option value="RU">Russia</option>
+                <option value="CA">Canada</option>
+                <option value="AU">Australia</option>
+                <option value="DE">Germany</option>
+                <option value="IT">Italy</option>
+              </select>
+            </div>
+            <div className="w-2/3">
+              <label htmlFor="phone" className="block text-lg font-medium mb-2 text-blue-900 font-poppins ">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                className="w-full p-3 rounded-md bg-white border border-gray-300 text-black"
+                placeholder="Enter your phone number"
+              />
+            </div>
+          </div>
+
+          {/* If any (Optional message) */}
+          <div className="mb-6">
+            <label htmlFor="message" className="block text-lg font-medium mb-2 text-blue-900 font-poppins">If Any</label>
+            <textarea
+              id="message"
+              name="message"
+              rows={4}
+              className="w-full p-3 rounded-md bg-white border border-gray-300 text-black"
+              placeholder="Write any additional information or queries"
+            ></textarea>
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-all"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+  );
+}

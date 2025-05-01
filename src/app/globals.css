@@ -19,8 +19,46 @@
   }
 }
 
+/* app/globals.css */
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; /* ya jo bhi tum use kar rahe ho */
+  min-height: 100vh;
+  background-color: #f9fafb; /* light gray ya jo bhi bg chahiye */
+  overflow-x: hidden; /* isse horizontal scroll nahi hoga */
 }
+
+
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
+}
+
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+.spin-orbit {
+  animation: orbitRotate 20s linear infinite;
+}
+
+@keyframes orbitRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+

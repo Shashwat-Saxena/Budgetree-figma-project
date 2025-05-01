@@ -4,14 +4,16 @@ export default function ContactSection() {
   return (
     <section className="bg-gradient-to-br bg-blue-900 px-6 md:px-20 py-16 text-white flex flex-col md:flex-row gap-16">
       {/* Left part (Text) */}
-      <div className="flex-1">
-        <h1 className="text-6xl font-semibold font-poppins mb-6 text-[#D0E1FF]">
-          Fly with Us
-        </h1>
-        <p className="text-2xl font-poppins bg-gradient-to-r from-white via-blue-300 to-blue-500 bg-clip-text text-transparent">
-          Enhance employee and customers engagement with <br /> smart rewards and payouts---email us to explore <br /> tailored solutions!
-        </p>
-      </div>
+      {/* Left part (Text) */}
+<div className="flex-1 flex flex-col justify-center items-center text-center">
+  <h1 className="text-6xl font-semibold font-poppins mb-6 text-[#D0E1FF]">
+    Fly with Us
+  </h1>
+  <p className="text-2xl font-poppins bg-gradient-to-r from-white via-blue-300 to-blue-500 bg-clip-text text-transparent">
+    Enhance employee and customers engagement with <br /> smart rewards and payouts—email us to explore <br /> tailored solutions!
+  </p>
+</div>
+
 
       {/* Right part (Form) */}
       <div className="flex-1 bg-[#D0E1FF] p-8 rounded-lg shadow-lg">

@@ -129,7 +129,8 @@ export default function Footer() {
         className="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left"
       >
         <div className="flex flex-col items-center md:items-start max-w-md">
-          <Image src={logo} alt="Budgetree Logo" width={120} height={60} className="mb-3" />
+        <Image src="/Image/budgetree_logo.svg" alt="Budgetree Logo" width={120} height={60} className="mb-3" />
+
           <p>
             In the fast-paced world of modern marketing, efficiency is key.
             That’s where marketing automation steps in, by harnessing the power of technology.

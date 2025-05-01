@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import Image from "next/image";
-import BillPayments from '@/Image/upi (1) 1.svg'
+
 const HomeBillPayment = () => {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center px-6 py-12">
@@ -11,7 +11,7 @@ const HomeBillPayment = () => {
         {/* Left Image */}
         <div className="flex-1 flex justify-center">
           <Image
-            src={BillPayments}
+            src="/image/upi .svg"
             alt="LoyalX Dashboard"
             width={700}
             height={500}
@@ -26,26 +26,26 @@ const HomeBillPayment = () => {
             Pay Bills Instantly, Securely, Anywhere
           </p>
 
-          {/* Points List - manually written */}
+          {/* Points List */}
           <div className="flex flex-col gap-6">
             <div>
               <h4 className="text-lg font-semibold mb-1">1. Instant Bill Settlements</h4>
               <p className="text-gray-600 text-sm">
-              Easily pay utility, mobile, broadband, and more bills instantly <br /> through a single, seamless platform.
+                Easily pay utility, mobile, broadband, and more bills instantly <br /> through a single, seamless platform.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-1">2. Multiple Payment Options</h4>
               <p className="text-gray-600 text-sm">
-              Support payments through UPI, debit cards, wallets, and net <br /> banking for maximum flexibility and convenience.
+                Support payments through UPI, debit cards, wallets, and net <br /> banking for maximum flexibility and convenience.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-1">3. Secure and Reliable Transactions</h4>
               <p className="text-gray-600 text-sm">
-              Enjoy encrypted, real-time bill payments with full transparency, <br /> tracking, and assured confirmation every time.
+                Enjoy encrypted, real-time bill payments with full transparency, <br /> tracking, and assured confirmation every time.
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ const HomeBillPayment = () => {
 
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HomeBillPayment
+export default HomeBillPayment;

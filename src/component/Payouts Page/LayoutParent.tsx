@@ -8,6 +8,7 @@ import HeroSection from "./HeroSection";
 import RewardsRedemptionSection from "./RewardsRedemptionSection";
 import ScalingFeatures from "./ScalingFeatures";
 import SecuritySection from "./SecuritySection";
+import PriorityBlue from "../PriorityBlue";
 
 export default function LayoutPage() {
   return (
@@ -21,7 +22,8 @@ export default function LayoutPage() {
           <EngagementPlatform />
           <RewardsRedemptionSection />
           <ScalingFeatures />
-          <SecuritySection />
+          <PriorityBlue/>
+          {/* <SecuritySection /> */}
           
           <Brands />
           <ContactSection />

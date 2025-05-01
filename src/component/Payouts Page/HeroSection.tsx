@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import rewardImage from '@/Image/dashboard1.svg'
+
+const rewardImage = '/Image/dashboard1.svg'; 
 
 export default function HeroSection() {
   return (
@@ -21,11 +22,13 @@ export default function HeroSection() {
       {/* Image BELOW Section */}
       <div className="w-full max-w-[1700px] -mt-86 z-10">
         <Image
-          src={rewardImage}
+          src={rewardImage} 
           alt="RewardX Dashboard"
           className="rounded-2xl w-full mx-auto"
+          width={1200}  
+          height={800}
         />
       </div>
     </div>
-  )
+  );
 }

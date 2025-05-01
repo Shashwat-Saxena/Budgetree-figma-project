@@ -5,7 +5,7 @@ import GetStarted from '../contactUs/GetStart'
 // import ContactUs from '../contactUs/ContactUs'
 import ContactSection from '../Contact'
 import BlogRelated from './RelatedBlog'
-import image from '@/Image/stack-four-rows-coins 1.svg'
+// import image from '@/Image/stack-four-rows-coins 1.svg'
 // import newsletterImg from '@/public/newsletter-img.jpg' // apna image path update kar lena
 
 export default function NewsletterCard() {
@@ -35,13 +35,13 @@ export default function NewsletterCard() {
 
         {/* Image Section */}
         <div className="flex-1">
-          <Image
-            src={image}
-            alt="Newsletter Image"
-            width={500}
-            height={300}
-            className="rounded-xl w-full object-cover"
-          />
+        <Image
+  src="/image/stack-four-rows-coins 1.svg"  // ✅ path from public folder
+  alt="Newsletter Image"
+  width={500}
+  height={300}
+  className="rounded-xl w-full object-cover"
+/>
         </div>
       </div>
     </section>

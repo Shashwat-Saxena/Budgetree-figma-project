@@ -2,18 +2,6 @@
 
 import Image from 'next/image';
 
-import indiaMap from '@/Image/india-country-dot-map-section3.svg';
-import redFM from '@/Image/Frame 176.svg';
-import ircon from '@/Image/Frame 177.svg';
-import astral from '@/Image/Astral_pipes_section3.svg';
-import mahindra from '@/Image/Frame 124.svg';
-
-import pineLabs from '@/Image/image 32.svg';
-import idfc from '@/Image/image 34.svg';
-import razorpay from '@/Image/image 28.svg';
-import cashfree from '@/Image/image 30.svg';
-import amazon from '@/Image/amazon.svg';
-
 export default function Brands() {
   return (
     <section className="w-full bg-white py-20 px-6">
@@ -26,17 +14,22 @@ export default function Brands() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-10 mt-12">
           {/* Map Image */}
           <div className="w-[380px] md:w-[450px]">
-            <Image src={indiaMap} alt="India Map" className="w-full h-auto object-contain" />
+            <Image src="/Image/india-country-dot-map-section3.svg" alt="India Map" className="w-full h-auto object-contain" width={450} height={400} />
           </div>
 
           {/* Partner Logos */}
           <div className="grid grid-cols-2 gap-6 w-full max-w-xl">
-            {[redFM, ircon, astral, mahindra].map((logo, i) => (
+            {[
+              '/image/Frame 176.svg',
+              '/image/Frame 177.svg',
+              '/image/Frame 124.svg',
+              '/image/Astral_pipes_section3.svg' 
+            ].map((logo, i) => (
               <div
                 key={i}
-                className="bg-white rounded-xl flex items-center justify-center p-1  hover:shadow-xl transition"
+                className="bg-white rounded-xl flex items-center justify-center p-1 hover:shadow-xl transition"
               >
-                <Image src={logo} alt={`Partner Logo ${i + 1}`} className="max-h-52 w-auto object-contain" />
+                <Image src={logo} alt={`Partner Logo ${i + 1}`} className="max-h-52 w-auto object-contain" width={120} height={80} />
               </div>
             ))}
           </div>
@@ -50,12 +43,20 @@ export default function Brands() {
         {/* Bottom logos with animation */}
         <div className="flex flex-wrap items-center justify-center gap-22 overflow-hidden">
           <div className="animate-marquee flex gap-22">
-            {[pineLabs, idfc, razorpay, cashfree, amazon].map((logo, i) => (
+            {[
+              '/image/image 32.svg',
+              '/image/image 34.svg',
+              '/image/image 28.svg',
+              '/image/image 30.svg',
+              '/image/amazon.svg'
+            ].map((logo, i) => (
               <Image
                 key={i}
                 src={logo}
                 alt={`Trusted Brand ${i + 1}`}
                 className="max-h-22 w-auto object-contain"
+                width={120}
+                height={60}
               />
             ))}
           </div>

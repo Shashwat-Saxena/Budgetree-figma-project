@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import rewardImage from '@/Image/dashboard1.svg'
 
 export default function RewardXSection() {
   return (
@@ -21,8 +20,10 @@ export default function RewardXSection() {
       {/* Image BELOW Section */}
       <div className="w-full max-w-[1000px] -mt-86 z-10">
         <Image
-          src={rewardImage}
+          src="/image/dashboard1.svg" 
           alt="RewardX Dashboard"
+          width={1000} 
+          height={600} 
           className="rounded-2xl w-full mx-auto"
         />
       </div>

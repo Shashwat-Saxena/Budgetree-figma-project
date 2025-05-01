@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import dashboard from '@/Image/dashboard1.svg';
 
 export default function HomeRewardX() {
   return (
@@ -21,9 +20,8 @@ export default function HomeRewardX() {
           <h3 className="text-4xl font-semibold mb-4">RewardX</h3>
           <p className="text-gray-700 mb-6">Distribute rewards your way.</p>
 
-          {/* Points List - manually written */}
+          {/* Points List */}
           <div className="flex flex-col gap-6">
-
             <div>
               <h4 className="text-lg font-semibold mb-1">1. Seamless Reward Linking</h4>
               <p className="text-gray-600 text-sm">
@@ -32,19 +30,18 @@ export default function HomeRewardX() {
             </div>
 
             <div>
-              <h4 className="text-lg font-semibold mb-1">2.Flexible Redemption Options</h4>
+              <h4 className="text-lg font-semibold mb-1">2. Flexible Redemption Options</h4>
               <p className="text-gray-600 text-sm">
-              Redeem partially or combine reward codes for bigger, more valuable rewards tailored to your needs.
+                Redeem partially or combine reward codes for bigger, more valuable rewards tailored to your needs.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-1">3. Instant Reward Delivery</h4>
               <p className="text-gray-600 text-sm">
-              Send unique reward links via email or SMS for fast, hassle-free redemption with personalized choices.
+                Send unique reward links via email or SMS for fast, hassle-free redemption with personalized choices.
               </p>
             </div>
-
           </div>
 
           {/* Button */}
@@ -58,7 +55,7 @@ export default function HomeRewardX() {
         {/* Right Image */}
         <div className="flex-[1] flex justify-center">
           <Image
-            src={dashboard} 
+            src="/Image/dashboard1.svg"
             alt="RewardX Dashboard"
             width={2700}
             height={2500}

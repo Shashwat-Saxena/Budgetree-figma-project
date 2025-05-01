@@ -1,10 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-
 import { ReactTyped } from 'react-typed';
-
-import Img1 from '@/Image/section1_dashboard.png.svg';
 
 export default function Hero() {
   return (
@@ -37,7 +34,7 @@ export default function Hero() {
         {/* Image 3 - back layer */}
         <div className="absolute top-16 left-16 z-10 transform rotate-[-8deg]">
           <Image
-            src={Img1}
+            src="/Image/section1_dashboard.png.svg"
             alt="Back"
             width={500}
             height={300}
@@ -47,7 +44,7 @@ export default function Hero() {
         {/* Image 2 - middle layer */}
         <div className="absolute top-8 left-8 z-20 transform rotate-[-4deg]">
           <Image
-            src={Img1}
+            src="/Image/section1_dashboard.png.svg"
             alt="Middle"
             width={500}
             height={300}
@@ -57,7 +54,7 @@ export default function Hero() {
         {/* Image 1 - top/front layer */}
         <div className="relative z-30 transform rotate-0">
           <Image
-            src={Img1}
+            src="/Image/section1_dashboard.png.svg"
             alt="Front"
             width={500}
             height={300}

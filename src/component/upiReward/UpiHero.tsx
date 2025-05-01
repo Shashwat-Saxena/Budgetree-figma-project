@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import rewardImage from '@/Image/upi (1) 1.svg'
+import Image from 'next/image';
 
 export default function UpiHero() {
   return (
@@ -21,11 +20,13 @@ export default function UpiHero() {
       {/* Image BELOW Section */}
       <div className="w-full max-w-[800px] -mt-46 z-10">
         <Image
-          src={rewardImage}
+          src="image\upi .svg" 
           alt="RewardX Dashboard"
+          width={800}
+          height={600}
           className="rounded-2xl w-full mx-auto"
         />
       </div>
     </div>
-  )
+  );
 }

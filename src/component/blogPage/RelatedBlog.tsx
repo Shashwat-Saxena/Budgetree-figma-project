@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import coinImage from '@/Image/stack-four-rows-coins 1.svg';
 
 const blogs = [
   {
@@ -7,21 +6,21 @@ const blogs = [
     title: "How to Calculate Freelance Hourly Rate in Greece",
     author: "Eran Karaso",
     category: "Finance",
-    image: coinImage,
+    image: "/image/stack-four-rows-coins 1.svg",
   },
   {
     id: 2,
     title: "How to Calculate Freelance Hourly Rate in Greece",
     author: "Eran Karaso",
     category: "Finance",
-    image: coinImage,
+    image: "/image/stack-four-rows-coins 1.svg",
   },
   {
     id: 3,
     title: "How to Calculate Freelance Hourly Rate in Greece",
     author: "Eran Karaso",
     category: "Finance",
-    image: coinImage,
+    image: "/image/stack-four-rows-coins 1.svg",
   },
 ];
 

@@ -15,13 +15,13 @@ export default function Navbar() {
       <nav className="flex items-center justify-between p-4 shadow-md bg-blue-900 border border-blue-950 rounded-full relative">
         {/* Logo */}
         <Link href="/">
-          <Image 
-            src={Logo}
-            alt="Budgetree Logo"
-            width={120}
-            height={40}
-            className="cursor-pointer"
-          />
+        <Image 
+  src="/Image/budgetree_logo.svg"
+  alt="Budgetree Logo"
+  width={120}
+  height={40}
+  className="cursor-pointer"
+/>
         </Link>
 
         {/* Desktop Menu */}

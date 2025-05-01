@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import React from "react";
-import loyalxImage from '@/Image/upi (1) 1.svg'; 
+
+// Update the image import path (ensure the image is placed in the public/images folder)
+const loyalxImage = '/image/upi .svg'; // Corrected path
 
 export default function HomeUPI() {
   return (
@@ -14,7 +16,7 @@ export default function HomeUPI() {
         {/* Left Image */}
         <div className="flex-1 flex justify-center">
           <Image
-            src={loyalxImage}
+            src={loyalxImage}  
             alt="LoyalX Dashboard"
             width={700}
             height={500}
@@ -34,21 +36,21 @@ export default function HomeUPI() {
             <div>
               <h4 className="text-lg font-semibold mb-1">1. Instant UPI Transfer</h4>
               <p className="text-gray-600 text-sm">
-              Send rewards directly to users’ bank accounts via UPI for <br /> immediate, hassle-free money transfers.
+                Send rewards directly to users’ bank accounts via UPI for <br /> immediate, hassle-free money transfers.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-1">2. Seamless Redemption Experience</h4>
               <p className="text-gray-600 text-sm">
-              Recipients claim their rewards instantly through a simple UPI link <br /> —no apps, no complications involved.
+                Recipients claim their rewards instantly through a simple UPI link <br /> —no apps, no complications involved.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-1">3. Secure and Reliable Payments</h4>
               <p className="text-gray-600 text-sm">
-              Enjoy fast, encrypted UPI transactions ensuring safe, transparent, <br /> and trustworthy reward experiences for all users.
+                Enjoy fast, encrypted UPI transactions ensuring safe, transparent, <br /> and trustworthy reward experiences for all users.
               </p>
             </div>
           </div>

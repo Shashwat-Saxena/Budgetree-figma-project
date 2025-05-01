@@ -1,8 +1,9 @@
 'use client';
 
 import Image from 'next/image';
-import pciLogo from '@/Image/image 13.svg'; // PCI
-import isoLogo from '@/Image/image 14.svg'; // ISO
+// Update the paths to reflect the correct locations in the public directory
+const pciLogo = '/images/image 13.svg'; // Updated path for PCI Logo
+const isoLogo = '/images/image 14.svg'; // Updated path for ISO Logo
 
 export default function SecuritySection() {
   return (
